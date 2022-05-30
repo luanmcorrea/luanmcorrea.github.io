@@ -20,16 +20,28 @@
   display: block;
   width: 130px;
   height: 100px;
-  background: url('../img/detalhe.svg') no-repeat center;
+  background: url("../img/detalhe.svg") no-repeat center;
   position: absolute;
-  top: -15px;
-  left: -40px;
+  top: -120px;
+  left: -20px;
   z-index: -1;
 }
 
 .introducao p {
   font-size: 1.5rem;
   color: #525252;
+}
+
+a.portfolio {
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+  border-bottom: 5px solid #0e41e2;
+  transition: .6s;
+}
+
+a.portfolio:hover {
+  padding-bottom: 5px;
 }
 
 @media (max-width: 1000px) {
@@ -47,9 +59,7 @@
     font-size: 2rem;
   }
   .introducao h1::before {
-    width: 30px;
-    height: 10px;
-    left: 0px;
+    display: none;
   }
 }
 
@@ -57,7 +67,7 @@
   .introducao {
     grid-template-columns: 1fr;
   }
- .introducao img {
-   display: none;
- }
+  .introducao img {
+    display: none;
+  }
 }
