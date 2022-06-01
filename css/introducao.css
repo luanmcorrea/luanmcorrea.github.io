@@ -29,19 +29,40 @@
 
 .introducao p {
   font-size: 1.5rem;
-  color: #525252;
+  color: var(--light-txt);
 }
 
-a.portfolio {
+.portfolio {
+  position: relative;
+}
+
+.portfolio::after {
+  position: absolute;
+  content: "";
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: var(--primary);
+  z-index: -1;
+  transition: all 0.3s;
+}
+
+.portfolio:hover::after {
+  height: 100%;
+  top: 0%;
+}
+
+.portfolio a {
   font-weight: bold;
   text-decoration: none;
-  color: #000;
-  border-bottom: 5px solid #0e41e2;
-  transition: .6s;
+  color: var(--text);
+  border-bottom: 5px solid var(--primary);
+  transition: all 0.2s;
 }
 
-a.portfolio:hover {
-  padding-bottom: 5px;
+.portfolio a:hover {
+  color: #fff;
 }
 
 @media (max-width: 1000px) {

@@ -1,7 +1,34 @@
+:root {
+  --bg: #ffffff;
+  --primary: #0e41e2;
+  --text: #000000;
+  --xp-bg: #f5f5f5;
+  --subtitle: #e0e0e0;
+  --light-txt: #525252;
+  --light-subtitle: #141414;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #000;
+    --primary: #0e41e2;
+    --text: #fff;
+    --xp-bg: #141414;
+    --subtitle: #202020;
+    --light-txt: #e0e0e0;
+    --light-subtitle: #a8a8a8;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Familjen Grotesk", Arial, sans-serif;
   margin: 0px;
-  color: #141414;
+  color: var(--text);
+  background: var(--bg);
 }
 
 h1,
@@ -21,6 +48,26 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
+}
+
+.voltar-topo {
+  z-index: 1;
+  position: fixed;
+  display: flex;
+  right: -45px;
+  bottom: -40px;
+  width: 40px;
+  height: 40px;
+  padding: 20px 40px 40px 25px;
+  border: 4px solid #ffffff15;
+  border-radius: 50%;
+  background: #141414;
+}
+
+.voltar-topo a {
+  text-decoration: none;
+  font-size: 24px;
+  color: #fff;
 }
 
 .subtitulo {

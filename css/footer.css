@@ -18,15 +18,48 @@
 }
 
 .footer-contato li {
-  font-weight: bold;
-  font-size: 2.25rem;
-  line-height: 1.1;
-  color: #fff;
-  margin-bottom: 30px;
+  position: relative;
+  margin-bottom: 20px;
 }
 
 .footer-contato li a {
+  position: relative;
+  text-decoration: none;
   color: #fff;
+  font-weight: bold;
+  font-size: 2.25rem;  
+  border-bottom: 5px solid var(--primary);
+  z-index: 1;
+}
+
+.footer-contato li a::after {
+  position: absolute;
+  content: "";
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: var(--primary);
+  z-index: -1;
+  transition: all 0.3s;
+}
+
+.footer-contato li a:hover::after {
+  height: 100%;
+  top: 0%;
+}
+
+.footer-contato li a::before {
+  opacity: 0;
+  position: absolute;
+  content: "↗";
+  color: #fff;
+  right: -40px;
+  transition: all .3s;
+}
+
+.footer-contato li a:hover::before {
+  opacity: 1;
 }
 
 .footer-copy {
