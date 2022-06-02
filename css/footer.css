@@ -77,3 +77,21 @@
     font-size: 1.5rem;
   }
 }
+
+@media (max-width: 400px) {
+  .footer-contato li a {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 340px) {
+  .footer-contato li a {
+    font-size: 100%;
+  }
+}
+
+@media (max-width: 290px) {
+  .footer-contato li a {
+    font-size: 1.2rem;
+  }
+}
