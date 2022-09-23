@@ -1,3 +1,3 @@
 # luanmcorrea.github.io
 
-Test web curriculum: <a href="https://luanmcorrea.github.io/" target="_BLANK">Click here</a>
+Test web personal resume: <a href="https://luanmcorrea.github.io/" target="_blank">Click here</a>
